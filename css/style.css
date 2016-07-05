@@ -1,0 +1,93 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #292929;
+}
+
+.navbar {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar .navbar-brand {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav {
+  color: white;
+}
+
+.navbar .navbar-nav li a {
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: #292929;
+  }
+}
+
+#hero {
+  margin-top: -70px;
+  padding: 10% 0;
+  text-align: center;
+  color: white;
+  background: url(../images/hero-bg.png);
+  background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  font-weight: bold;
+}
+
+#hero h4 {
+  color: #65c2fd;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#hero .btn-default {
+  background-color: #65c2fd;
+  border: none;
+  border-radius: 0px;
+  color: white;
+}
+
+#features {
+  padding: 5% 0;
+  background-color: white;
+}
+
+#features h3 {
+  color: #65c2fd;
+  font-weight: 700;
+}
+
+#cta {
+  padding: 5% 0;
+  color: white;
+  text-align: center;
+  background: url(../images/hero-bg.png);
+  background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-position: center center;
+}
+
+#cta .btn-default {
+  background-color: #65c2fd;
+  border: none;
+  border-radius: 0px;
+  color: white;
+}
+
+#footer {
+  padding: 1% 0;
+  color: white;
+  text-align: center;
+}

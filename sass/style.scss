@@ -1,0 +1,101 @@
+////////////////////////
+//VARIABLES AND MIXINS/
+//////////////////////
+
+$bluecolor: #65c2fd;
+@mixin blueBtn {
+	background-color: $bluecolor;
+	border: none;
+	border-radius: 0px;
+	color: white;
+}
+@mixin bgSize {
+	background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+}
+
+///////////////////////
+// GENERAL CSS STYLES/
+/////////////////////
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: #292929;
+}
+
+.navbar {
+	background-color: transparent;
+	border:none;
+	.navbar-brand {
+		color: white;
+		font-weight: bold;
+	}
+	.navbar-nav {
+		color: white;
+		li a {
+			color: white;
+		}
+	}
+
+
+}
+
+@media(max-width:767px) {
+	.navbar-collapse {
+	background-color: #292929;
+	}
+}
+
+
+#hero {
+	margin-top: -70px;
+	padding: 10% 0;
+	text-align: center;
+	color: white;
+	h1 {
+		font-weight: bold;
+	}
+	h4 {
+		color: $bluecolor;
+		font-weight: bold;
+		padding-bottom: 10px;
+	}
+	background: url(../images/hero-bg.png);
+	background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-position: center center;
+	.btn-default {
+		@include blueBtn;
+	}
+}
+
+#features {
+	padding: 5% 0;
+	background-color: white;
+	h3 {
+		color: $bluecolor;
+		font-weight: 700;
+	}
+}
+
+#cta {
+	padding: 5% 0;
+	color: white;
+	text-align: center;
+	.btn-default {
+		@include blueBtn;
+	}
+	background: url(../images/hero-bg.png);
+	@include bgSize;
+	background-position: center center;
+}
+
+#footer {
+	padding: 1% 0;
+	color: white;
+	text-align: center;
+}
